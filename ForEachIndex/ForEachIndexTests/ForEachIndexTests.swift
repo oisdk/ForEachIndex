@@ -21,6 +21,8 @@ private func numClos(index: Int, value: Int) {
 
 class ForEachIndexTests: XCTestCase {
   
+  // Looping over a String.CharacterView, with a for loop in the forEachWithIndex function
+  
   func testLookupChars() {
     self.measureBlock { ForEachCollections.chrs.forEachWithIndexLookup(charClos) }
   }
@@ -28,6 +30,8 @@ class ForEachIndexTests: XCTestCase {
   func testIncChars() {
     self.measureBlock { ForEachCollections.chrs.forEachWithIndexIncrement(charClos) }
   }
+  
+  // Looping over an array of integers, with a for loop in the forEachWithIndex function
   
   func testLookupNums() {
     self.measureBlock {
@@ -45,6 +49,8 @@ class ForEachIndexTests: XCTestCase {
     }
   }
   
+  // Looping over a String.CharacterView, with a forEach in the forEachWithIndex function
+  
   func testLookupCharsClos() {
     self.measureBlock { ForEachCollections.chrs.forEachWithIndexLookupClos(charClos) }
   }
@@ -52,6 +58,8 @@ class ForEachIndexTests: XCTestCase {
   func testIncCharsClos() {
     self.measureBlock { ForEachCollections.chrs.forEachWithIndexIncrementClos(charClos) }
   }
+  
+  // Looping over an array of integers, with a forEach in the forEachWithIndex function
   
   func testLookupNumsClos() {
     self.measureBlock {
