@@ -28,4 +28,3 @@ extension CollectionType {
       zip(self.indices,self).forEach(block)
   }
 }
-
